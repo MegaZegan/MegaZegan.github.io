@@ -1,218 +1,579 @@
-﻿<!DOCTYPE html>
-<html lang="en" class="no-js">
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Last Gun on Earth</title>
-	<meta name="description" content="A photography-inspired website layout with an expanding stack slider and a background image tilt effect" />
-	<meta name="keywords" content="photography, template, layout, effect, expand, image stack, animation, flickity, tilt" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/flickity.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<script src="js/modernizr.custom.js"></script>
-</head>
-<body>
-	<embed src="song.mp3" autostart="true" hidden="true" loop="true" width="0" height="0" />
-	<div class="container">
-		<div class="hero">
-			<div class="hero__back hero__back--static"></div>
-			<div class="hero__back hero__back--mover"></div>
-			<div class="hero__front"></div>
-		</div>
-		<header class="codrops-header">
-			<div class="codrops-links">
-				<a class="codrops-icon codrops-icon--prev" href="https://www.facebook.com/megazegan0" title="My profile">
-				<a class="codrops-icon codrops-icon--drop" href="https://www.instagram.com/megazegan/?hl=tr" title="My Instagram"></a>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TROU NOIR</title>
+
+ 
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- hayattan nefret ediyorsan bu custom �eyleri ayarla istersen -megazegan -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/elusive-webfont.css">
+    <link href="css/animate.css" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    
+    <script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.js"></script>
+    
+    <!-- HTML5 d��� kullanda boku ye -->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  
+  
+  	<div id="navbar-main">
+      <!-- Fixed navbar -->
+	    <div class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	          	<i class="el-icon-lines"></i>
+	          </button>
+	          <a class="navbar-brand hidden-xs hidden-sm" href="#home"><h1> TROU NOIR </h1></a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          	<ul class="nav navbar-nav">
+		            <li><a href="#home" class="smoothScroll">Ana Sayfa</a></li>
+					<li> <a href="#about" class="smoothScroll">Bizim Hakkimda</a></li>					
+					<li> <a href="#team" class="smoothScroll">Ne isler yapiyoruz?</a></li>
+					<li> <a href="#portfolio" class="smoothScroll">Diger Websitelerim</a></li>
+					<li> <a href="#blog" class="smoothScroll">Ulasim</a></li>
+				</ul>
+	        </div><!--/.#��kmepls -->
+	      </div>
+	    </div>
+    </div>
+x
+  
+  
+		<!-- ==== olurda bir g�n mottom olursa yazar�m ==== -->
+	    <div id="headerwrap" id="home" name="home">
+			<header class="clearfix">
+	  		 		<h1 class="animated bounceIn">TROU NOIR</h1>
+	  		 		<p class="animated slideInLeft"></p>
+	  		 		<p class="animated slideInRight"></p>
+
+	  		</header>	    
+	    </div><!-- /*yazamad�* -->
+
+		<!--  cici s�zler -->
+		<div class="greywrap">
+			<div class="container" id="about" name="about">			
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-time"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<h2>Yaptigim is hizi</h2>
+							<p>Sizlere daha guven verici bir sekilde anlatmak gerekirse, bize bir proje verdiginizde deadline'i asmadan o sure icerisinde alacaginiz projeler yapiyoruz. Siz isteyin, biz yapalim.</p>
+						</div>
+					</div>
+						
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-star"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<h2>Yaptigimizda En Iyisi</h2>
+							<p>Iddaliyiz! Cunku bizi biz yapan bu iddialarimizdir. Grubumuzda her turden isle ilgilenen ve reklamlarinizi yaratmada sikinti cikartmayacak kisilerleyiz. Pisman olmayacaginiz bir firmayiz.</p>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-sm-4 col-xs-6 callout">
+						<div class="col-md-3 service-icon-wrapper img-circle">
+							<i class="icon el-icon-user"></i>
+						</div>
+						<div class="col-md-9 fade-up service-info">
+							<div class="fade-up">
+								<h2>Hire Us Today</h2>
+								<p>Bizi ise alma durumuzda, fiyatlari sizlerle ozel olarak yada yarattigimiz yapay zeka konusacaktir. Belirli hali hazir fiyat uygulamalari disinda firmaya yada sahsa ozel reklamlar yapiyoruz.</p>
+							</div>
+						</div>
+					</div>	
+				</div>
 			</div>
-			<h1 class="codrops-title">MegaZegan <span>Writer</span></h1>
-			<nav class="menu">
+		</div>
+		
+		<!-- ==== hakk�m�zda cici s�zler ==== -->
+		<div class="container" id="about" name="about">
+			<div class="row white">
+				<h1 class="fade-down centered">HAKKIMIZDA</h1>
+				<hr>
 				
-			</nav>
-			<script SameSite="None; Secure" src="https://static.landbot.io/landbot-3/landbot-3.0.0.js"></script>
-<script>
-  var myLandbot = new Landbot.Livechat({
-    configUrl: 'https://chats.landbot.io/v3/H-947048-CMGDUXLSOIA2IHEI/index.json',
-  });
-</script>
-		</header>
-		<div class="stack-slider">
-			<div class="stacks-wrapper">
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Story"><span>File: 3414</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type1/1.png" alt="img01" />
-							<h3 class="item__title">File: 3414 <span class="item__date">29/12/2019</span></h3>
-							<div>
-								<ul>
-									<li><b>Birinci Kayıt</b></li><br /><br />
-									<li>
-									Merhaba!---- Merhaba? Ah sanırım bu yeterli olacaktır. Benim adım Doktor Vance Ludwig- Sizlere yani geleceğin.. rahat ve huzur içerisinde yaşayacak çocukları için basit bir video çekmek istedim. <br /><br />
-									Günümüz değerlerini eğer doğru anlarsanız.. bu, gelecekte sahip olduğunuz her şey adına şükredeceğiniz bir başyapıt olacak.<br /><br />
-									Hazır mısınız? Başlayalım. <br /><br />
-									</b>-----------------------------------------------------------</b><br /><br />
-									<i> <b> Tarih: 29 Aralık 2019 </i> </b><br /><br />
-									<i> <b> Gün: Pazar </i> </b><br /><br />
-									<i> <b> Saat: 03:42 </i> </b><br /><br />
-									Dünyamız, zamanında yeşillikler ile dolu bir cenneti, bizlere yemek ve sığınma sağlarken karşılığında hiçbir şey istemezdi. Ona iyi davranırsak, bize daha iyi davranırdı.. ama ne yazık ki insanoğlu çok nankör bir canlıydı.<br /><br />
-									Onun verdiğinden daha fazlasını istedik, doyumsuzduk. Tabii, dünyamız isteklerimizi kaldıramaz hale gelmişti. Artık yeşillik yoktu dünyamızda, sefalet içersine bürünmüş bir durumdaydık. Dışarıda nefes almak zor hale gelmiş, tarım neredeyse bitmişti. O kadar az hayvan çeşiti kalmıştı ki, köpekler bile yemekten sayılıyordu. Belki insan eti bile..<br /><br />
-									Dünyanın sonu gelmişti kısacası, ama çağımızın en parlak zihinleri ile beraber birkaç yöntem düşünmeye başlamıştık. Hayvanları klonlama? O kadar pahalı bir proje olurdu ki, devletler bu projeyi desteklemezlerdi. Biz de.. bir virüs yapmaya karar verdik.<br /><br />
-									Planımız çok basitti, devlet adamları para vermeyi red ediyordu projelerimize bizde onlara şöyle bir seçenek sunduk. Sahte, basit zararsız bir virüs yaratmayı önerdik, böylelikle devletler halka bir aşı uygulayarak dünyada ki geriye kalan sınırlı yemek stocklarınıda dünyaya geri verebilecektik. Proje onaylanmıştı, 36 devletin onaylaması ile.<br /><br />
-									Basitçe anlatmak gerekrise.. HHV6 virüsünün basitleştirilmiş ve zararsız hale getirilmiş bir virüs yaptık. Sadece 76 saate tüm dünyaya yayılmıştı, planımız işe yaramıştı.. gelelim işin diğer kısmına deney kısmına.<br /><br />
-									Ne yazık ki artık şempazeler veya fareler ile deney yapamıyorduk, azılı idam suçlularını toplayıp teker teker deney yapmaya başladık. Deneyin amacı şuydu, insandaki açlık hissini bitirecekti. Bitirmek.. biraz ütopik olucak bir laf elbette.. Bir nevi, o kadar minimal duruma getirecek ki, sadece bir çikolata yediğinizde doyacaktınız.<br /><br />
-									Hadi teste geçelim. <br /><br />
-									</b>-----------------------------------------------------------</b><br /><br />
-									
-									<i> <b> Saat: 19:30 </i> </b><br /><br />
-									
-									James Foe, 26 Yaşında Kafkaslı bir seri katil. 23 Kadının ölümünden sorumlu bir suçlu, idam suçlusu. Şayet bilmiyor ki.. geleceğin ilk adımı atacak kişi.<br /><br />
-									"İğneleri batırın çocuklar." Evet.. basit bir iğne, insanoğlunun en büyük ihtiyacını sonlandıracak iğne. Yeni bir dünya.. ihtiyacımız olan bir dünya. Hastamızı neredeyse 4 gündür aç bıraktık, test etmek adına. Eğer, iğneyi olduktan sonra aç hissedecek mi? Diye.<br /><br />
-									...<br /><br />
-									...<br /><br />
-									...<br /><br />
-									İğneler hastanın hem beynine, hemde bedenine sıkıntısız bir şekilde yapılmıştı. Hastamız ise hala sapasağlamdı.. Ona yemek uzattığımızda, ilk aç gözler ile saldırsada..? Sadece minicik bir ekmek ısırdıktan sonra doymuştu. İlacımız olmuştu! Sonunda.. insanlığa yepyeni bir umut oldu.<br /><br />
-									
-									</b>-----------------------------------------------------------</b><br /><br />
-									<i> <b> Tarih: 31 Aralık 2019 </i> </b><br /><br />
-									<i> <b> Gün: Pazartesi, </i> </b><br /><br />
-									<i> <b> Saat: 13:12 </i> </b><br /><br />
-									Hastamız gayet yerli yerindeydi.. tabii, vücüdu yaptığımız iğneden sonra virüsle savaşmaya başladığı belliydi. Bu beklenen bir haraketti, sonuçta.. bedenin alışık olmayacağı psikolojik bir haraket ile karşı karşıyaydı da. İğnenin yapıldığı gençe yemek verdiğimizde istekli olsada yiyemiyor, bedeni buna negatif etki vermiyordu bile. Tek bir sorun vardı.. sadece aç hissediyordu.<br /><br />
-									Psikolojik olarak bu durumu yenemiyordu, sanki durmadan aç hissediyordu. Haraketlerimize bazen tepki veremiyordu, açlığa çok odaklandığı belliydi. İhtiyacı yoktu.. ama istiyordu. <br /><br />
-									Projenin başında ki doktor net bir biçimde bu projeyi doğru yapmamız gerektiğini, yılbaşı için her şeyin planlarda gitmezse sokaklara döneceğimizi söylemişti. Öyle bir niyetim yok.. düzgün çalışmalı.<br /><br />
-									Pekala, tekrardan başlayalım. Hemşiremiz, Claire Redstain aynı zamanda psikolojik bölümünden mezun. Onunla, bir odada konuşmayı deneyecek. Videonun devamını orada açacağım. <br /><br />
-									
-									-----------------------------------------------<br /><br />
-									<b> <i> Bu kısım sadece güvenlik kamerası videosudur. </b> </i> <br /><br />
-									
-									Claire: "Merhaba James? Acaba beni.. net duyabiliyor musun?" <br /><br />
-									James: "----E-Evet, duyuyorum."<br /><br />
-									Claire: "Çok güzel.. acaba sorun nedir? Acaba.. bana detaylıca sorunları anlatır mısın?" <br /><br />
-									James: "...Aç hissediyorum. Bana gelen yemeklere bakıyorum.. sadece bakıyorum. Akli dengemi kaybedecek gibiyim.. midem, hiçbir yemek almıyor. Etler, tatlılar hiçbiri.. doyurmuyor."<br /><br />
-									Claire: "Sana yapılan ilacın yan etkisi bunlar, şayet.. açlık dışında başka bir şey düşünemiyor musun? Mesela yemek dışında başka bir şey düşünmeyi denedin mi?" <br /><br />
-									James: "<b>TABİİ Kİ DENEDİM!---</b> <i> 	(Bu agresiflik sonucu, dışarıda ki askerler silahlarını kaldırmıştı.) </i> 		Özür dilerim. Denedim.. Beynim, düşünebildiği tek şey yemek. Kadınları düşünemiyorum, sanki artık sex hiç ilgi çekici gelmiyor. Para.. aynı heyecanı yaşatmıyor. Tek istediğim şey.. yemek. Ne yediğim umrumda değil, sadece yemek."<br /><br />
-									
-									Bundan sonra bayan Claire durumdan korktuğu için orayı terk etmek istemiş, James tek bırakılmıştı.
-									
-									<i> <b> Saat: 23:30 </i> </b><br /><br />
-									"...Büyük bir sorun ile karşı karşıyayız. James--- kayıp. Yani ondan geriye ne kaldıysa, bedeninden deri parçaları gibi bir ton şeyi kafesine bırakmış. Aynı zamanda onu kontrol eden iki gardiyanı da."<i> <b> Saat: 19:30 </i> </b><br /><br />
-									"İşin kötü yanı, gardiyanların ölü olarak karşımıza çıkmamasıydı. Bedenlerinden kocaman parçalar koparılmasına rağmen, dimdik ayakta ve hala aç olduklarını dile getiren anlamsız sözler kullanmışlardı. Isırık izi ile.. aşıyı, bir nevi onlara aktarmıştı. Ama çok saçma.. ölmeleri gerekirken hala sapasağlamdı."</b><br /><br />
-									"Bir emir gelmişti, ısırılan herkesin öldürülmesi gerektiğini söylemişlerdi. Aynı şekilde.. çok sürmeden diğer gardiyanlar ısırılan herkesi öldürmüştü."</b><br /><br />
-									...</b><br /><br />
-									...</b><br /><br />
-									...</b><br /><br />
-									"...Uzun sürmeyecek bir kayıtta daha bulunmak istiyorum. Sizin.. yararınız adına. Tahmin edebiliyorum, yeteri kadar zamanımız olmadığını. Yarattığımız o aşı.. bir nevi, yarattığımız virüs ile birleşiyor. İkisi ayrı bir konumda yapıldığında, hasta açlık hissetmiyor. Ama yarattığımız o zararsız virüs, aşıya yan etki yapıyor. Yepyeni.. bir şey üretiyor?</b><br /><br />
-									"Taşıyıcı hiçbir şekile acı hissetmemeye başlıyor, içgüdüleri sadece açlığa çalışıyor. Agresifleşiyor, güçleniyorlar. Yemek yemeden, süresiz bir biçimde yaşayabiliyorlar ama gerekli sıvıyı kan ile tüketiyorlar. Uzuvları veya organları eksik olsa bile yaşayabiliyorlar.. En etkili öldürme yolu, kalp yada beyin oluyor bu konumda."
-									<b> O süreçte dışarıdan bolca ateş sesleri ve çığlıklar duyulmaya başlamıştı. </b> </b><br /><br />
-									"Eğer, bu.. yarattığımız virüsü hala kapmamış kesimlerdenseniz, ısırıldığınızda onlar gibi olmuyorsunuz. Çok.. fazla bir vaktim kalmadı. İçeri girmeye çalışıyorlar, askeri güçler zamanında yetişemeyecek.</b><br /><br />
-									"...Tek diyeceğim, hayatta kalın."</b><br /><br /></b><br /><br />
-									
-									<b> <i> Dr. Vance Ludwig. </b> </i>
-									
-									
-									
-									
-								
-
-
-									</li>
-								</ul>
-							</div>
-					</div>
-						</div>
-					
+				<div class="fade-up col-md-6">
+					<p> Bir grup universite ogrencisi olarak odevimiz geregi olarak baslayan ama daha sonrasinda eger olurda gercekten iyi yaparsak gercek yapmak istedigimiz firma. Genclerin de reklam ajansi kurabilecegini kanitlayabilecegimiz yer. </p>
 				</div>
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Part 3"><span>File: 112045</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type2/1.png" alt="img01" />
-							<h3 class="item__title">File: 112045 <span class="item__date">11/02/2020</span></h3>
-							<div>
-								<ul>
-									<li>
-									<b> Ben Albay John Junior Pershing, bu da benim günlüğümden geri kalanlar. </b> <br /> <br />
-									<i>Dünyamız, bildiğiniz üzere iğrenç bir durumla karşı karşıya. Kaynaklarımızın kısıtlı olması yetmiyormuş gibi, şimdide insan hayvan ve eti olduğu fark etmeden her şeye saldıran bir türle karşı karşıya kaldık. <br /> <br />
-									Hiçbir şeyi ayırt etmiyorlar, aç yamyam bir orospu çocuğu gibi etrafta aptalca koşturup bize saldırıyorlar. Bu insan artığı tiplemeleri yaratan birkaç aptal bilim adamının yüzünden dünyamız bokun eşiğine gelmiş durumda.<br /> <br />
-									Yaptıkları minik "Eğlenceli" araştırma sonucunda yarattıkları canavar biz oraya gelene kadar neredeyse tüm ekibi ele geçirmiş, ısırmış ve kendilerinden biri yapmışlardı. Yılbaşı günündee, insanlar aileleri ile beraber olup.. silahlı güçlerin silah indirdiği günde, yayıldı dışarıya. Hiçbirimiz hazırlıklı değildik.<br /> <br />
-									Suya batırılmış bir boya gibi dağıldılar. Ordular silah indirdiği vakitte, kimse kendini savunamadı. Dışarı yayıldılar, hayvanlara. Hayvanlar, insanlara bulaştırdı.. sadece yılbaşına 5 saat kala neredeyse dünyanın yarısını da onlara teslim etmiştik. Çok hızlı yayılmıştı.. durduramadık.<br /> <br />
-									Bu yaratıklar, aşırı güçlüler. Acı hissetmiyorlar, kafası veya kalbi dışında hiçbir yere ateş etmek bir anlam ifade etmiyor. Sizi hedef aldığı andan itibaren, delirmişcesine saldırıyorlar. İşin kötü yanı.. sürü psikolojisinde ilerliyorlar.<br /> <br />
-									Aynı hayvanlaşmış bir grup gibiler. Birleşik gruplar halinde geziyorlar, onların arasında ölenleri yiyorlar. Başka bir sürü yaklaştığında kavga ediyorlar, yemeklerini sadece kendi sürüleri arasında paylaşıyorlar. Yeteri kadarda zekiler.. eğer, tek başına bir tane kaldıysa kendi sürünüsü kurmak adına sadece ısırıyor. Yemiyor.. sürü sayısı en fazla 6 oluyor.<br /> <br />
-									Eğer ısırılırsanız, 10 dakika içerisinde ısırılan yeri ampüte etmeniz gerekiyor. Virüs yavaş yayılıyor, ısırılanlar sadece 3 saat içerisinde dönüşüyorlar. <br /> <br />
-									Bakın ben bir bilim zırvası değilim. Ama modern dünyada da değiliz artık, yapmanız gereken ve bilmeniz gereken her şeyi buraya yazdım. Geriye kalan tek şey.. sizlerin ilerlemesi.<br /> <br /> 
-									Yoksa, ne olacağını benim kadar iyi biliyorsunuz.<br /> <br /> </i>
-									</li>
-								
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-	<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Part 3"><span>Map</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type3/1.png" alt="img01" />
-							<h3 class="item__title">Basitçe Harita; <span class="item__date">20/04/2020</span></h3>
-							<div>
-								<ul>
-									<li>
-									Kafanızı çok karıştırmak istemiyorum.. O yüzden, sizlere basitçe haritanın üstündeki bölgelerin ne işe yaradığını söyleyeceğim. <br /><br />
-									
-									1-) <b>Safe House:</b> Safe House diye adlandırdığımız yer, bizim grubumuzun hayatta kaldığı bölge. Burada, belirli yoldaşlarınız sizlere belirli görevler verecektir, emin olun.. hiçkimse burada 10 dakikadan fazla boş kalmaz. Safe House, aynı zamanda sizler için akşamları güvenli bir yer olacaktır. Buraya dışarıdan bir şeyler giremez.<br /><br />
-									2-) <b>Hospital:</b> Burası isminden anlayacağınız üzere hastane. Burası virüsün bu bölgede ki yayılma yeri olduğu için kimse yağmayalayamadı. Basitçe söylemek gerekirse.. İçerisinde ihtiyacımız olan her şey var, ama ilk cehennemi geçmemiz gerekiyor.<br /><br />
-									3-) <b>Food Factory:</b> Bu kısım konserve yemek yapan bir firmanın en son işletmelerini yaptığı bir yer, genelde kedi ve köpek mamaları gibi yada.. konserve yemeklerin çıktığı yerler. Kıyamette, her şey sonuçta bir yemek? <br /><br />
-									4-) <b>Adam's Warehouse:</b> Adam's Warehouse burada yaşayan diğer insan sürüsü. Genelde çok karşı karşıya geliriz, birbirimize sataşmadığımız sürece barış içerisindeyiz.. Ama, güvenin bana sataşmak için sizlere yer arayacaklar, umursamayın. <br /><br />
-									5-) <b>Unknown State:</b> Bu kısım hakkında pek bir bilgimiz yok, çoğu kişi buranın "Ölü" bir kasaba olduğunu söylüyor, bazıları da Adam'ın yönetiminden kaçıp buraya yerleştiğini. Pek bir bilgimiz yok.. öğrenmek için varsınız tabii sizde.<br /><br />
-									6-) <b>Horde Town:</b> Bu tatlı isim kasabanın içerisinde ki herkesin ölü olmasından dolayı denk geliyor. Ama bunlar standart ölüler değil, mutasyona uğramış.. türden bir ölüler. O yüzden, kasabanın içerisinde ki binalarda gölgelerde saklanıyorlar sabahları. Geceleri? Geceleri avlanmak için dışarı çıkıyor.<br /><br />
-									</li>
-								
-								</ul>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="stack">
-					<h2 class="stack-title"><a href="#" data-text="Part 4"><span>Survivors List</span></a></h2>
-					<div class="item">
-						<div class="item__content">
-							<img src="img/type4/1.png" alt="img01" />
-							<h3 class="item__title">Basit bir tanışma <span class="item__date"></span></h3>
-							<div>
-								<ul>
-									
-									<li>
-									Adınız:<br /><br /></li>
-									<li>Soyadınız: <br /><br /></li>
-									<li>Yaşınız:<br /><br /></li>
-									<li>Yeteneğiniz:<br /><br /></li>
-									<li>Bu sürece kadar nasıl hayatta kaldınız?:<br /><br /></li>
-									<li>Dilerseniz geçmişiniz:<br /><br /></li>
-
-									
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					
-					
+				
+				<div class="fade-up col-md-6">
+					<p> Peki neler mi yapabiliriz? Cok fazla sey! Bir reklam ajansi olarak size sunabilecegimiz fazlasi ile seyler var. Sizin icin bir kampanya, poster ve reklam hazirliyoruz! Aradiniz her turden ve herkese uygun reklamlar. Uygun fiyatlara. </p>
 				</div>
 			</div>
+		</div><!-- ��kmevol2 -->
+  		
 
-			<!-- /stacks-wrapper -->
+		<!-- ==== sallama b�lgem -->
+		<section class="section-divider textdivider divider2">
+			<div class="container">
+				<h1 class="fade-down">HEDEFLERIMIZ</h1>
+				<hr>
+				<div class="col-md-3">
+					<span class="counter">100</span>
+					<span class="counter-desc">Projeye Odaklanma</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">1000</span>
+					<span class="counter-desc">Sayili butcemiz</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">10000</span>
+					<span class="counter-desc">Fikirlerimiz</span>
+				</div>
+				<div class="col-md-3">
+					<span class="counter">100000</span>
+					<span class="counter-desc">Hayalimizde ki kazanc!</span>
+				</div>
+			</div>
+		</section>
+
+
+		
+
+		<!-- ==== tek ba��ma orduyum ==== -->
+		<div class="container section" id="team" name="team">
+		<br>
+			<div class="row white centered">
+				<h1 class="fade-down centered">TAKIMIMIZI TANIYIN</h1>
+				<hr class="fade-down title-mb">
+				<div class="col-md-4 ">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team1.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="https://www.instagram.com/megazegan/" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Ugur</h4>
+						<p>Yazilimci! Bu sitenin kurucusu! Ayni zamanda sirketlerde calismis, bilgisayar tabanli her konuda size yardim olacak kisi! Simdiden tanistigima memlun oldum!</p>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team2.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="https://www.instagram.com/ceren_ertss/" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Ceren</h4>
+						<p>Orjinalde grafik tasarim lisesinden gelen, web sitesi tabanli calisan Ceren! Grubun bir nevi dagilimlari ile ugrasan kisi. Fikri olmasa da fikri gelistiren kisi.</p>
+					</div>
+				</div>
+								<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team3.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="https://www.instagram.com/" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Aysu</h4>
+						<p>Degerli taslar ile ilgilenen <b>(ve garanti benden daha iyi resim cizen)</b> biri! Ayni zamanda bizim reklamimizda oynayacak hanimefendi kendisi!</p>
+					</div>
+				</div>
+				
+				
+
+					
+				</div>
+								<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team5.jpg" alt="">
+						<a href="" class="team-social instagram"><i class="el-icon-instagram"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="https://www.instagram.com/teomnzeybek/" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Teoman</h4>
+						<p>Grubumuzda gercekten resim cizebilen, yetenekli ve edebiyati olan kisi. Cizim yetenekleri ile her turlu taslagi onceden planlamamiza yardim eden grubun degerli uyesi.</p>
+					</div>
+									</div>
+								<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team6.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="https://www.instagram.com/arthurterziyan/" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Arthur</h4>
+						<p>Oyuncu, hemde tek bir sahada degil. Grup calismalarinda her turlu bize ayak uydurabilen, yeri gelir sosyal medyada sizin en buyuk kampanyanizi buyuten kisidir. Eger kucuk bir firmaysaniz, sizi tanitmamiz cok kisa surer Arthur sayesinde!</p>
+					</div>
+					
+				</div>
+								<div class="col-md-4">
+					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
+						<img class="img team-image" src="images/team4.jpg" alt="">
+						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
+						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
+						<a href="https://www.instagram.com/" class="team-social flickr"><i class="el-icon-flickr"></i></a>
+					</div>
+
+					<div class="col-md-9 col-sm-9 col-xs-9 fade-up team-info">
+						<h4>Oguz</h4>
+						<p>Sosyal medyada gordugunuz yardim kampanyalari olsun yada elde ettigimiz kazanclarin belirli bir miktarini her zaman daha iyi amaclar icin kullanmamizi soyleyen kisi. Sayesinde yardim edebilecegimiz sayisiz insanlar var.. Sizinde yardiminizla!</p>
+					</div>
+			</div>
 		</div>
-		<!-- /stacks -->
-		<img class="loader" src="img/three-dots.svg" width="60" alt="Loader image" />
-	</div>
-	<!-- /container -->
-	<!-- Flickity v1.0.0 http://flickity.metafizzy.co/ -->
-	<script src="js/flickity.pkgd.min.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/main.js"></script>
-</body>
+
+		<!-- ==== sevilmeyen sekmesi ==== -->
+		<div class="greywrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 centered fade-up">
+						<img class="img-responsive" src="images/macbook.png" align="">
+					</div>
+					<div class="col-md-6 fade-down">
+						<h2>Reklama ihtiyacin mi var? Daha fazla arama!</h2>
+						<p>Dilediginiz kisa reklam filmleri, posterizasyon, animasyon , 3D model ve daha fazlasina ucuz bir miktarla sahip olabilirsiniz.</p>
+						<p><a href="https://chat.whatsapp.com/Kz9tyhDyWhE8rtI9gNkKOu" class="btn btn-success">Bize Ulasin</a></p>
+					</div>					
+				</div>
+			</div>
+			<br>
+			<br>
+		</div><!-- sevbilmeyen sekmesi -->
+		
+		<!-- ==== SECTION DIVIDER3 -->
+		<section class="section-divider textdivider divider3">
+			<div class="container">
+				<h1 class="fade-down">TAKIMIMIZ SIZI DAHA FAZLA BUYUTUCEK!</h1>
+				<hr>
+				<p class="fade-up">Ayni bir karadelik gibi, aradiginiz her seyi bulabilirsiniz. Ama bazen.. aradiginizdan daha guzelleri gelir.</p>
+			</div>
+		</section>
+		
+		<!-- ==== haval�s�zler.txt ==== -->
+		<div id="portfolio" name="portfolio">
+		<br>
+			<div class="row white">
+				<h1 class="fade-down centered">BAZI YAPTIGIMIZ ISLER</h1>
+				<hr class="fade-down title-mb">
+			</div>
+			<div class="">
+			<div class="">	
+				
+				<div id="portfolio-carousel">
+					<!-- resim1 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio01.jpg" alt="">
+								<figcaption>
+									<h5>FABER CASTELL</h5>
+									<a href="https://www.faber-castell.com.tr/tr" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption>
+							</figure>
+				    	</div>
+					</div><!-- bu k�sm� githubtan �ald�m eyw -->					
+					
+					<!-- resim2 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio02.jpg" alt="">
+								<figcaption>
+									<h5>Scrikss</h5>
+									<a href="https://www.scrikss.com.tr/" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption>
+				    	</div>
+					</div>
+					
+					<!-- resim3 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio03.jpg" alt="">
+								<figcaption>
+									<h5>Adel</h5>
+									<a href="https://www.adel.com.tr/" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption>
+							</figure>
+				    	</div>
+					</div><!-- /col -->
+
+					<!-- resim4 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio04.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje 1</h5>
+									<a href="C:\Users\Ard\Desktop\Desktop Tools\solitude\pipboy\index.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption>
+							</figure>
+				    	</div>
+					</div>
+					
+					<!-- resim5 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio05.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje 2</h5>
+									<a href="C:\Users\Ard\Desktop\Desktop Tools\solitude\Rusty Hearts\Rusty Hearts.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- resim6 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio06.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje 3</h5>
+									<a href="C:\Users\Ard\Desktop\Desktop Tools\solitude\Ame No Kisaki\HtmlPage.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+<!-- PORTFOLIO IMAGE 1 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio01.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->				
+					
+					<!-- PORTFOLIO IMAGE 2 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio02.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 3 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio03.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+					<!-- PORTFOLIO IMAGE 4 -->
+					<div class="fade-up col-md-4 ">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio04.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 5 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio05.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+					
+					<!-- PORTFOLIO IMAGE 6 -->
+					<div class="fade-up col-md-4">
+				    	<div class="grid mask">
+							<figure>
+								<img class="img-responsive" src="images/folio06.jpg" alt="">
+								<figcaption>
+									<h5>Ozgun Proje</h5>
+									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
+									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+								</figcaption><!-- /figcaption -->
+							</figure><!-- /figure -->
+				    	</div><!-- /grid-mask -->
+					</div><!-- /col -->
+
+			</div><!-- /carousel -->	
+			</div><!-- /row -->			
+
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+		<!-- ==== SECTION DIVIDER4 ==== -->
+		<section class="section-divider textdivider divider4">
+			<div class="container">
+				<h1 class="fade-down">IHTIYACIN OLANA SAHIPSIN! SADECE BIRAZ YARDIMA IHTIYACIN VAR!</h1>
+				<hr>
+				<p class="fade-up">Bringing him smallest met few now returned surprise learning jennings. Objection delivered eagerness he exquisite at do in. Warmly up he nearer mr merely me.</p>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+		<!-- ==== BLOG ==== -->
+		<div class="container" id="blog" name="blog">
+		<br>
+			<div class="row white">
+				<h1 class="fade-down centered">Kurulum Hikayesi</h1>
+				<hr class="fade-down title-mb">
+			</div><!-- /row -->
+			
+			<div class="row">
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img class="img fade-down" src="images/bg3.jpg">
+						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<img class="img" src="images/team1.jpg">
+						<h4>Ugur</h4>
+						<h5>17 Aralik Paylasildi.</h5>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Aslinda her sey daha farkliydi.</h2>
+						<p>Konuyu ilk planladigimizda hepimizde bambaska bir fikir vardi. Sabit bir konu olduguna emin degildik, ama bazi guzel fikirler vardi ki, bu projeden sonra bile hayata getirmek istiyoruz.</p>
+						<p>Trou Noir bizim icin bir baslangic oldu. Ama bir son olmayacak! </p>
+				
+					</div>
+				</div><!-- /col -->
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img class="img fade-down" src="images/bg2.jpg">
+						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<img class="img" src="images/team2.jpg">
+						<h4>Ceren</h4>
+						<h5>17 Aralik Paylasildi.</h5>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Isimin dogusu</h2>
+						<p>Bu isimin cikisi biraz daha farkliydi, birden fazla isim dusunmustuk. NoirBlanc, Dawnstar ve tahmin edemeyecegimiz kadar fazla. Ama Noir'de karar kildigimizda baya bos kaldigini hissetik, Trou ile beraber isim tamamlandi.</p>
+						<p>Resimler artik kendili ele vermese de, evet kara delikle alakali.</p>
+
+					</div>
+				</div><!-- /col -->
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img class="img fade-down" src="images/bg4.jpg">
+						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<img class="img" src="images/team3.jpg">
+						<h4>Aysu</h4>
+						<h5>17 Aralik Paylasildi.</h5>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Ilk Bulusma</h2>
+						<p>Hepimiz ne yapacagimizi konusuyorduk, cogumuz icin yeni bir tecrube olacakt�. Ama hepimiz cok guzel fikirler one surduk reklam kampanyalari icin, boylelikle aramizda gercekten cok iyi planlayicilar oldugunu da ogrendik..</p>
+						<p>Grup calismasini asil burasi dogurdu..</p>
+						
+					</div>
+				</div><!-- /col -->
+
+				<div class="col-md-6 blog-bg">
+					<div class="img-wrapper">
+						<img class="img fade-down" src="images/bg1.jpg">
+						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
+						<img class="img" src="images/team4.jpg">
+						<h4>Oguz</h4>
+						<h5>17 Aralik Paylasildi.</h5>
+					</div>
+					<div class="col-md-10 col-sm-10 col-xs-10 blog-content fade-up">
+						<h2>Ve Trou Noir Dogdu!</h2>
+						<p>Bir hoodie olmasa da, en azindan oldu. Bizim de istedigimiz buydu.</p>
+						<p></p>
+			
+					</div>
+				</div><!-- /col -->
+
+			</div><!-- /row -->
+			<br>
+			<br>
+		</div><!-- /container -->
+
+		
+		<!-- ==== SECTION DIVIDER6 ==== -->
+		<section class="section-divider textdivider divider6">
+			<div class="container">
+				<h1 class="fade-down">ISTANBUL - NISANTASI UNIVERSITESI</h1>
+				<hr>
+				<div class="fade-up">
+					<p>Maslak</p>
+					<p>05354734109</p>
+				</div>
+			</div><!-- container -->
+		</section><!-- section -->
+		
+
+
+		<div id="footerwrap">
+			<div class="container">
+				<div class="btt-wrapper fade-down"><a class="btt-link smoothScroll" href="#home"><i class="el-icon-chevron-up"></i></a></div>
+				<ul id="footer-social" class="fade-down">
+					<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-twitter"></i></a></li>
+					<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-facebook"></i></a></li>
+					<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-googleplus"></i></a></li>
+					<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-flickr"></i></a></li>
+					<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-youtube"></i></a></li>
+					<li><a href="#" target="_blank" title="Like Us"><i class="el-icon-rss"></i></a></li>
+				</ul>
+			
+			</div>
+		</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+  </body>
 </html>
