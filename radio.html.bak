@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radiop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.css">
+
+    <title>Pipboy application</title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand navbar-light">
+        <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">STAT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inv.html" class="nav-link">INV</a>
+                </li>
+                <li class="nav-item">
+                    <a href="data.html" class="nav-link">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="radio.html" class="nav-link">RADIO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="tab-content">
+        <div class="tab-pane active" id="status" role="tabpanel">
+            <div class="center-image">
+                <img src="img/vault-boy.png" />
+                <p>CONNECTION ERROR!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <navbar class="navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                <span>LEVEL 1</span>
+                <div class="level-progress">
+                    <div class="level-progress-indicator"></div>
+                </div>
+            </div>
+            <div class="col-3">
+                AP 50/50
+            </div>
+        </div>
+    </navbar>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

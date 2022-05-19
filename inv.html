@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.css">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand navbar-light">
+        <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">STAT</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inv.html" class="nav-link">INV</a>
+                </li>
+                <li class="nav-item">
+                    <a href="data.html" class="nav-link">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="map.html" class="nav-link">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="radio.html" class="nav-link">RADIO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a href="#weapons" class="nav-link" data-toggle="tab">WEAPONS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#armor" class="nav-link" data-toggle="tab">ARMOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aid" class="nav-link" data-toggle="tab">AID</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active full" id="weapons" role="tabpanel">
+                        <ul class="item-list">
+                            <li><a href="#" class="44_pistol">44-Pistol</a></li>
+                            <li><a href="#" class="10mm_pistol">10mm Pistol</a></li>
+                            <li><a href="#" class="assault_rifle">Assault Rifle</a></li>
+                        </ul>
+                        <div class="item-stats">
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="damage pull-right">-</div>
+                                        <div class="pull-left">Damage</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="ammo pull-right">-</div>
+                                        <div class="pull-left">Ammo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="fire_rate pull-right">-</div>
+                                        <div class="pull-left">Fire Rate</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="range pull-right">-</div>
+                                        <div class="pull-left">Range</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="accuracy pull-right">-</div>
+                                        <div class="pull-left">Accuracy</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="weight pull-right">-</div>
+                                        <div class="pull-left">Weight</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-highlight">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="value pull-right">-</div>
+                                        <div class="pull-left">Value</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="armor" role="tabpanel">
+                        ARMOR
+                    </div>
+                    <div class="tab-pane" id="aid" role="tabpanel">
+                        AID
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <nav class="navbar-light pip-footer">
+        <div class="row">
+            <div class="col-3">
+                HP 90/90
+            </div>
+            <div class="col-6">
+                LEVEL 1
+                <div class="level-progress">
+                    <div class="level-progress-indicator" width="70%"></div>
+                </div>
+            </div>
+            <div class="col-3 text-right">
+                AP 70/70
+            </div>
+        </div>
+    </nav>
+    <script src="../../jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.js"></script>
+</body>
+
+</html>
