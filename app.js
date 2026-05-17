@@ -90,6 +90,10 @@ const translations = {
     cv_intro: "The website gives hiring teams the fast scan. The PDF keeps the original full CV available for download or review.",
     cv_open: "Open PDF CV",
     cv_email: "Email me",
+    cmd_cv: "Build CV",
+    cmd_projects: "List Projects",
+    cmd_skills: "Show Skills",
+    cmd_hire: "Why Hire?",
     cv_role: "Computer programming student, developer, designer, and cybersecurity-focused builder.",
     cv_contact: "Contact",
     cv_education: "Education",
@@ -154,6 +158,10 @@ const translations = {
     skill_web: "Web ve Ürün",
     skill_creative: "Yaratıcı Araçlar",
     cv_title: "Okunabilir özet ve orijinal PDF.",
+    cmd_cv: "CV Oluştur",
+    cmd_projects: "Projeleri Listele",
+    cmd_skills: "Yetenekleri Göster",
+    cmd_hire: "Neden İşe Almalı?",
     contact_title: "İşe alım, staj, freelance veya iş birliği?",
     footer_text: "Statik HTML, CSS, JavaScript ve GitHub Pages ile geliştirildi."
   },
@@ -170,6 +178,10 @@ const translations = {
     hero_cta_projects: "Security-Projekte ansehen",
     hero_cta_cv: "CV öffnen",
     identity_caption: "Defensive Tools, Code und kreative Systeme.",
+    cmd_cv: "CV bauen",
+    cmd_projects: "Projekte listen",
+    cmd_skills: "Skills zeigen",
+    cmd_hire: "Warum einstellen?",
     availability_title: "Offen für Cybersecurity- und Entwicklerrollen",
     availability_text: "Standort Istanbul. Türkisch muttersprachlich, Englisch obere Mittelstufe. Bereit, schnell zu lernen und in echten Teams beizutragen.",
     projects_title: "Security-Projekte, die schnell und klar bewertet werden können.",
@@ -191,6 +203,10 @@ const translations = {
     hero_cta_projects: "Ver proyectos",
     hero_cta_cv: "Abrir CV",
     identity_caption: "Herramientas defensivas, código y sistemas creativos.",
+    cmd_cv: "Crear CV",
+    cmd_projects: "Listar proyectos",
+    cmd_skills: "Ver habilidades",
+    cmd_hire: "Por qué contratar?",
     availability_title: "Disponible para roles de ciberseguridad y desarrollo",
     availability_text: "Basado en Estambul. Turco nativo, inglés intermedio alto. Listo para aprender rápido y aportar en equipos reales.",
     projects_title: "Proyectos de seguridad organizados para una revisión rápida.",
@@ -212,6 +228,10 @@ const translations = {
     hero_cta_projects: "Voir les projets",
     hero_cta_cv: "Ouvrir le CV",
     identity_caption: "Outils défensifs, code et systèmes créatifs.",
+    cmd_cv: "Créer le CV",
+    cmd_projects: "Lister projets",
+    cmd_skills: "Voir compétences",
+    cmd_hire: "Pourquoi recruter ?",
     availability_title: "Ouvert aux rôles cybersécurité et développeur",
     availability_text: "Basé à Istanbul. Turc natif, anglais niveau intermédiaire supérieur. Prêt à apprendre vite et contribuer dans de vraies équipes.",
     projects_title: "Projets sécurité organisés pour une lecture rapide.",
@@ -227,6 +247,10 @@ const languageSelect = document.querySelector("#languageSelect");
 const navToggle = document.querySelector(".nav-toggle");
 const nav = document.querySelector(".nav");
 const progress = document.querySelector("#progress");
+const matrixCanvas = document.querySelector("#matrixCanvas");
+const matrixCtx = matrixCanvas.getContext("2d");
+const clockEl = document.querySelector("#istanbulClock strong");
+const cvTerminalOutput = document.querySelector("#cvTerminalOutput");
 
 function applyLanguage(lang) {
   const dict = { ...translations[fallbackLang], ...(translations[lang] || {}) };
@@ -258,6 +282,72 @@ window.addEventListener("scroll", () => {
   progress.style.width = total > 0 ? `${(window.scrollY / total) * 100}%` : "0%";
 });
 
+let matrixDrops = [];
+function resizeMatrix() {
+  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  matrixCanvas.width = Math.floor(window.innerWidth * ratio);
+  matrixCanvas.height = Math.floor(window.innerHeight * ratio);
+  matrixCanvas.style.width = `${window.innerWidth}px`;
+  matrixCanvas.style.height = `${window.innerHeight}px`;
+  matrixCtx.setTransform(ratio, 0, 0, ratio, 0, 0);
+  matrixDrops = Array.from({ length: Math.ceil(window.innerWidth / 18) }, () => Math.random() * window.innerHeight);
+}
+
+function drawMatrix() {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.matchMedia("(pointer: coarse)").matches) return;
+  matrixCtx.fillStyle = "rgba(12, 5, 4, 0.075)";
+  matrixCtx.fillRect(0, 0, window.innerWidth, window.innerHeight);
+  matrixCtx.font = "13px JetBrains Mono, Consolas, monospace";
+  matrixCtx.fillStyle = "rgba(255, 122, 26, 0.12)";
+  const chars = "01ABCDEF{}[]<>/\\#$SOCIAM";
+  matrixDrops.forEach((y, index) => {
+    const x = index * 18;
+    const char = chars[Math.floor(Math.random() * chars.length)];
+    matrixCtx.fillText(char, x, y);
+    matrixDrops[index] = y > window.innerHeight + 40 && Math.random() > 0.975 ? 0 : y + 18;
+  });
+}
+
+resizeMatrix();
+window.addEventListener("resize", resizeMatrix);
+setInterval(drawMatrix, 70);
+
+let trailParticles = [];
+document.addEventListener("mousemove", (event) => {
+  if (window.matchMedia("(pointer: coarse)").matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (trailParticles.length > 18) {
+    const oldDot = trailParticles.shift();
+    oldDot.remove();
+  }
+  const dot = document.createElement("span");
+  const size = Math.random() * 4 + 3;
+  dot.className = "cursor-dot";
+  dot.style.left = `${event.clientX}px`;
+  dot.style.top = `${event.clientY}px`;
+  dot.style.width = `${size}px`;
+  dot.style.height = `${size}px`;
+  document.body.appendChild(dot);
+  trailParticles.push(dot);
+  setTimeout(() => {
+    dot.remove();
+    trailParticles = trailParticles.filter((item) => item !== dot);
+  }, 800);
+});
+
+function updateIstanbulClock() {
+  const now = new Date();
+  const time = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Istanbul",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit"
+  }).format(now);
+  clockEl.textContent = time;
+}
+
+updateIstanbulClock();
+setInterval(updateIstanbulClock, 1000);
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) entry.target.classList.add("visible");
@@ -277,6 +367,60 @@ document.querySelectorAll(".filter").forEach((button) => {
     });
   });
 });
+
+const terminalCommands = {
+  cv: [
+    "$ build-cv --source pdf --mode recruiter",
+    "name: Mustafa Uğur Erkan",
+    "alias: MegaZegan",
+    "location: Istanbul, Türkiye",
+    "education: Computer Programming / Beykent University",
+    "languages: Turkish native, English upper-intermediate",
+    "output: assets/Mustafa-Ugur-Erkan-CV.pdf"
+  ],
+  projects: [
+    "$ list-projects --security --published",
+    "SentinelForge: SOC analytics, detections, risk scoring, HTML reports",
+    "CloudPolicyLens: IAM policy review and least-privilege guardrails",
+    "SecretHawk: local secret scanning, entropy checks, SARIF output",
+    "Secure Portfolio Engine: multilingual GitHub Pages site with safe labs"
+  ],
+  skills: [
+    "$ show-skills --grouped",
+    "code: Python, C++, C#, Java, Flutter/Dart, SQL, JavaScript",
+    "security: SOC concepts, detection logic, cloud IAM, secret scanning",
+    "systems: Linux, Cisco networking, SQL Server, open-source tools",
+    "creative: Adobe CC, 3ds Max, animation, UI presentation"
+  ],
+  hire: [
+    "$ explain --why-hire-me",
+    "I connect code, security, design, and documentation.",
+    "I can turn messy problems into tools that teams can understand.",
+    "I learn fast, ship visibly, and keep the work safe to demo."
+  ]
+};
+
+function renderTerminalCommand(command) {
+  const lines = terminalCommands[command] || terminalCommands.cv;
+  cvTerminalOutput.innerHTML = "";
+  lines.forEach((line, index) => {
+    const p = document.createElement("p");
+    if (line.startsWith("$")) p.className = "terminal-command";
+    else if (index > 0) p.className = "terminal-value";
+    p.textContent = line;
+    cvTerminalOutput.appendChild(p);
+  });
+  const hint = document.createElement("p");
+  hint.className = "terminal-muted";
+  hint.textContent = "Tip: use the buttons below like terminal shortcuts.";
+  cvTerminalOutput.appendChild(hint);
+}
+
+document.querySelectorAll(".terminal-action").forEach((button) => {
+  button.addEventListener("click", () => renderTerminalCommand(button.dataset.command));
+});
+
+renderTerminalCommand("cv");
 
 function scorePassword(value) {
   let score = 0;

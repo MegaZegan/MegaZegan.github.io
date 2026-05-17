@@ -15,8 +15,13 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="matrixCanvas" aria-hidden="true"></canvas>
   <div class="noise" aria-hidden="true"></div>
   <div id="progress" aria-hidden="true"></div>
+  <div id="istanbulClock" class="istanbul-clock" aria-label="Current time in Istanbul">
+    <span>Istanbul</span>
+    <strong>--:--:--</strong>
+  </div>
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="MegaZegan home">
@@ -356,6 +361,19 @@ dropbox-sync.example
             <div><strong data-i18n="cv_education">Education</strong><span data-i18n="cv_education_val">Beykent University, Computer Programming</span></div>
             <div><strong data-i18n="cv_experience">Experience</strong><span data-i18n="cv_experience_val">Web operations, social media, SQL/XML exposure, IT support, design.</span></div>
             <div><strong data-i18n="cv_languages">Languages</strong><span data-i18n="cv_languages_val">Turkish native, English upper-intermediate.</span></div>
+          </div>
+        </article>
+        <article class="terminal-workbench reveal">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <p>cv-builder.sh</p>
+          </div>
+          <div class="terminal-body compact" id="cvTerminalOutput" aria-live="polite"></div>
+          <div class="terminal-actions" aria-label="CV terminal commands">
+            <button type="button" class="terminal-action" data-command="cv" data-i18n="cmd_cv">Build CV</button>
+            <button type="button" class="terminal-action" data-command="projects" data-i18n="cmd_projects">List Projects</button>
+            <button type="button" class="terminal-action" data-command="skills" data-i18n="cmd_skills">Show Skills</button>
+            <button type="button" class="terminal-action" data-command="hire" data-i18n="cmd_hire">Why Hire?</button>
           </div>
         </article>
       </div>
