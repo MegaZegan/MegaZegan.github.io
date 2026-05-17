@@ -1,5 +1,13 @@
-# PipBoy
-Pipboy screen in FallOut4
+# MegaZegan.github.io
 
-![Image of Pipboy](https://vignette.wikia.nocookie.net/fallout/images/7/72/Fallout4_E3_PipBoy.png/revision/latest?cb=20150615125852)
+Professional cybersecurity portfolio for Mustafa Uğur Erkan, known online as MegaZegan.
 
+Built as a static GitHub Pages site with:
+
+- defensive cybersecurity project showcases
+- interactive browser-only security labs
+- multilingual interface options
+- CV PDF access
+- responsive dark red/orange visual system
+
+Live site: https://megazegan.github.io
